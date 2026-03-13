@@ -1,0 +1,388 @@
+/* Prithvi Foundation - Simple Old-School Website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: #946f60;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #6b4f43;
+}
+
+/* Header */
+.site-header {
+    background-color: #f9f5f0;
+    border-bottom: 2px solid #946f60;
+    padding: 10px 0;
+}
+
+.header-inner {
+    width: 960px;
+    margin: 0 auto;
+    display: table;
+    width: 960px;
+}
+
+.logo-area {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.logo-area img {
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo-area span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #946f60;
+    vertical-align: middle;
+}
+
+.nav-area {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.nav-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-area ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-area ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.nav-area ul li a:hover,
+.nav-area ul li a.active {
+    color: #946f60;
+    border-bottom: 2px solid #946f60;
+}
+
+/* Hero Slider */
+.hero-slider {
+    width: 960px;
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid #ccc;
+    background: #000;
+    overflow: hidden;
+    height: 400px;
+}
+
+.hero-slider .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-slider .slide.active {
+    display: block;
+}
+
+.hero-slider .slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-slider .slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    background: rgba(148, 111, 96, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background: #946f60;
+}
+
+.slider-btn.prev {
+    left: 5px;
+}
+
+.slider-btn.next {
+    right: 5px;
+}
+
+/* Quote Section */
+.quote-section {
+    width: 960px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 25px 40px;
+    background: #f9f5f0;
+    border-top: 2px solid #946f60;
+    border-bottom: 2px solid #946f60;
+}
+
+.quote-section p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    color: #5a3e32;
+    margin: 8px 0;
+    font-style: italic;
+}
+
+/* Section Headings */
+.section-heading {
+    width: 960px;
+    margin: 30px auto 15px auto;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #946f60;
+    font-size: 22px;
+    color: #946f60;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Activities Grid */
+.activities-grid {
+    width: 960px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+}
+
+.activity-item {
+    width: 220px;
+    float: left;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    background: #faf8f5;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.activity-item img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.activity-item h3 {
+    font-size: 14px;
+    color: #946f60;
+    margin: 8px 5px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+/* About Section (on Home) */
+.about-brief {
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f5f0;
+    border: 1px solid #ddd;
+}
+
+.about-brief h2 {
+    color: #946f60;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-brief p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.about-brief a {
+    color: #946f60;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 960px;
+    margin: 20px auto 40px auto;
+    overflow: hidden;
+}
+
+.contact-form {
+    width: 560px;
+    float: left;
+}
+
+.contact-info {
+    width: 360px;
+    float: right;
+    padding-left: 30px;
+}
+
+.contact-info h3 {
+    color: #946f60;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #aaa;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    background: #fff;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #946f60;
+    color: #fff;
+    border: 1px solid #7a5a4c;
+    padding: 8px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.contact-form button:hover {
+    background: #7a5a4c;
+}
+
+/* Footer */
+.site-footer {
+    background: #946f60;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-top: 3px solid #7a5a4c;
+}
+
+.site-footer a {
+    color: #f0ddd4;
+}
+
+/* About Page */
+.about-page {
+    width: 960px;
+    margin: 20px auto 40px auto;
+}
+
+.about-page h1 {
+    color: #946f60;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #946f60;
+    padding-bottom: 8px;
+}
+
+.dropdown-section {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-header {
+    background: #f9f5f0;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    color: #946f60;
+    border-bottom: 1px solid #ccc;
+    user-select: none;
+}
+
+.dropdown-header:hover {
+    background: #f0e8de;
+}
+
+.dropdown-header .arrow {
+    float: right;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 15px 20px;
+    background: #fff;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.dropdown-content.open {
+    display: block;
+}
+
+.dropdown-content p {
+    margin-bottom: 12px;
+}
+
+/* Horizontal Rule */
+hr.divider {
+    width: 960px;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid #ccc;
+}

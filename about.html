@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Prithvi Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="site-header">
+    <div class="header-inner">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="logo/Prithvi%20foundation%20logo.png" alt="Prithvi Foundation Logo">
+            </a>
+            <span>Prithvi Foundation</span>
+        </div>
+        <div class="nav-area">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#activities">Activities</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- About Page Content -->
+<div class="about-page">
+
+    <h1>About Us</h1>
+
+    <!-- Dropdown 1: About Prithvi Foundation -->
+    <div class="dropdown-section">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">
+            <span class="arrow">&#9660;</span>
+            About Prithvi Foundation
+        </div>
+        <div class="dropdown-content open">
+            <p><em>&ldquo;Seva Paramo Dharma&#7717;&rdquo; &mdash; Service is the highest duty.</em></p>
+
+            <p>Prithvi Foundation is a non-governmental organization dedicated to serving society through spiritual, humanitarian, and community-focused initiatives. Founded in 2018 and registered under the Indian Trusts Act, 1882, the Foundation is based in Tehri Garhwal, Uttarakhand, a region deeply rooted in India's spiritual and ecological heritage.</p>
+
+            <p>Guided by the values of service, compassion, and harmony with nature, Prithvi Foundation works to uplift the lives of local communities while preserving the spiritual traditions that have long defined the Himalayan region. The Foundation believes that sustainable social development must go hand in hand with cultural and spiritual well-being.</p>
+
+            <p>Through its various initiatives, Prithvi Foundation supports local community development, pilgrimage services, and charitable outreach. At its spiritual centre, the Foundation regularly organizes numerous charitable and spiritual programs that bring together devotees, volunteers, and visitors in a shared spirit of service and learning.</p>
+
+            <p>Its work includes efforts aimed at improving livelihoods in surrounding communities, supporting pilgrims who travel through the region, and creating spaces for spiritual reflection, service, and collective welfare.</p>
+
+            <p>Rooted in the timeless ethos of seva (selfless service), Prithvi Foundation continues to work towards nurturing a more compassionate, spiritually aware, and socially responsible society.</p>
+        </div>
+    </div>
+
+    <!-- Dropdown 2: Prithvi Spiritual Centre -->
+    <div class="dropdown-section">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">
+            <span class="arrow">&#9660;</span>
+            Prithvi Spiritual Centre
+        </div>
+        <div class="dropdown-content open">
+            <p>Nestled in the serene surroundings of Kothali Village, the Prithvi Foundation's spiritual centre serves as a place of devotion, community service, and collective well-being. Rooted in the spirit of seva and spiritual harmony, the centre brings together people from nearby villages and visiting devotees through a range of spiritual, cultural, and community-focused activities.</p>
+
+            <p>At the heart of the centre's work is the belief that spiritual spaces should also nurture the physical, social, and emotional well-being of the communities around them. Regular yoga and meditation workshops are organized to encourage mindfulness, inner balance, and holistic health among participants of all ages.</p>
+
+            <p>The centre also promotes community bonding through sports activities for local youth, creating opportunities for recreation, teamwork, and healthy engagement. In keeping with the tradition of shared meals in many spiritual traditions, community lunches are regularly organized, bringing villagers, volunteers, and visitors together in a spirit of equality and togetherness.</p>
+
+            <p>Spiritual practices remain central to the life of the centre. Havan and pooja ceremonies are conducted regularly, creating an atmosphere of devotion and prayer. In addition, Granthi Sahib Path and Ardas are organized, reflecting the centre's inclusive spiritual ethos and respect for diverse traditions of faith and worship.</p>
+
+            <p>Aligned with its commitment to environmental consciousness, the centre also conducts herbal plant distribution drives, encouraging households to cultivate medicinal and traditional plants that support both health and ecological awareness.</p>
+
+            <p>Beyond these activities, the Prithvi Spiritual Centre acts as a bridge for Prithvi Foundation's wider charitable initiatives in the region. From supporting the upliftment of local schools to organizing distribution drives for essential supplies, the centre serves as a hub through which the Foundation extends its service to surrounding communities.</p>
+
+            <p>Through these efforts, the Kothali centre continues to stand as a space where spirituality, service, and community development come together, fostering a culture of compassion, learning, and collective upliftment.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="site-footer">
+    <p>&copy; 2025 Prithvi Foundation. All Rights Reserved. | <a href="about.html">About</a> | <a href="index.html#contact">Contact</a></p>
+</div>
+
+<!-- Dropdown Script -->
+<script>
+function toggleDropdown(header) {
+    var content = header.nextElementSibling;
+    var arrow = header.querySelector('.arrow');
+    if (content.className.indexOf('open') !== -1) {
+        content.className = 'dropdown-content';
+        arrow.innerHTML = '&#9654;';
+    } else {
+        content.className = 'dropdown-content open';
+        arrow.innerHTML = '&#9660;';
+    }
+}
+</script>
+
+</body>
+</html>
