@@ -9,24 +9,24 @@
 body {
     font-family: Calibri, Arial, sans-serif;
     font-size: 15px;
-    color: #333;
-    background-color: #fff;
+    color: #f9f5f0;
+    background-color: #946f60;
     line-height: 1.6;
 }
 
 a {
-    color: #946f60;
+    color: #f9f5f0;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #6b4f43;
+    color: #fff;
 }
 
 /* Header */
 .site-header {
-    background-color: #f9f5f0;
-    border-bottom: 2px solid #946f60;
+    background-color: #7a5a4c;
+    border-bottom: 2px solid #f9f5f0;
     padding: 10px 0;
 }
 
@@ -34,7 +34,6 @@ a:hover {
     width: 960px;
     margin: 0 auto;
     display: table;
-    width: 960px;
 }
 
 .logo-area {
@@ -45,14 +44,6 @@ a:hover {
 
 .logo-area img {
     height: 60px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.logo-area span {
-    font-size: 16px;
-    font-weight: bold;
-    color: #946f60;
     vertical-align: middle;
 }
 
@@ -71,11 +62,12 @@ a:hover {
 .nav-area ul li {
     display: inline-block;
     margin-left: 25px;
+    position: relative;
 }
 
 .nav-area ul li a {
     text-decoration: none;
-    color: #333;
+    color: #f9f5f0;
     font-size: 15px;
     font-weight: bold;
     padding: 5px 0;
@@ -83,8 +75,45 @@ a:hover {
 
 .nav-area ul li a:hover,
 .nav-area ul li a.active {
-    color: #946f60;
-    border-bottom: 2px solid #946f60;
+    color: #fff;
+    border-bottom: 2px solid #f9f5f0;
+}
+
+/* About Dropdown in Navbar */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #7a5a4c;
+    border: 1px solid #f9f5f0;
+    min-width: 220px;
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    color: #f9f5f0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+.nav-dropdown-menu a:hover {
+    background: #946f60;
+    color: #fff;
 }
 
 /* Hero Slider */
@@ -92,7 +121,7 @@ a:hover {
     width: 960px;
     margin: 20px auto;
     position: relative;
-    border: 1px solid #ccc;
+    border: 1px solid #7a5a4c;
     background: #000;
     overflow: hidden;
     height: 400px;
@@ -158,15 +187,15 @@ a:hover {
     margin: 25px auto;
     text-align: center;
     padding: 25px 40px;
-    background: #f9f5f0;
-    border-top: 2px solid #946f60;
-    border-bottom: 2px solid #946f60;
+    background: #7a5a4c;
+    border-top: 2px solid #f9f5f0;
+    border-bottom: 2px solid #f9f5f0;
 }
 
 .quote-section p {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
-    color: #5a3e32;
+    color: #f9f5f0;
     margin: 8px 0;
     font-style: italic;
 }
@@ -176,9 +205,9 @@ a:hover {
     width: 960px;
     margin: 30px auto 15px auto;
     padding-bottom: 8px;
-    border-bottom: 2px solid #946f60;
+    border-bottom: 2px solid #f9f5f0;
     font-size: 22px;
-    color: #946f60;
+    color: #f9f5f0;
     font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -193,8 +222,8 @@ a:hover {
     width: 220px;
     float: left;
     margin: 10px 10px;
-    border: 1px solid #ccc;
-    background: #faf8f5;
+    border: 1px solid #7a5a4c;
+    background: #7a5a4c;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -208,7 +237,7 @@ a:hover {
 
 .activity-item h3 {
     font-size: 14px;
-    color: #946f60;
+    color: #f9f5f0;
     margin: 8px 5px;
     font-family: Calibri, Arial, sans-serif;
 }
@@ -218,12 +247,12 @@ a:hover {
     width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background: #f9f5f0;
-    border: 1px solid #ddd;
+    background: #7a5a4c;
+    border: 1px solid #5a3e32;
 }
 
 .about-brief h2 {
-    color: #946f60;
+    color: #f9f5f0;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 20px;
     margin-bottom: 10px;
@@ -233,10 +262,11 @@ a:hover {
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 10px;
+    color: #f9f5f0;
 }
 
 .about-brief a {
-    color: #946f60;
+    color: #f9f5f0;
     font-weight: bold;
 }
 
@@ -259,7 +289,7 @@ a:hover {
 }
 
 .contact-info h3 {
-    color: #946f60;
+    color: #f9f5f0;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -275,7 +305,7 @@ a:hover {
     margin-bottom: 3px;
     font-weight: bold;
     font-size: 14px;
-    color: #333;
+    color: #f9f5f0;
 }
 
 .contact-form input[type="text"],
@@ -284,10 +314,11 @@ a:hover {
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;
-    border: 1px solid #aaa;
+    border: 1px solid #7a5a4c;
     font-family: Calibri, Arial, sans-serif;
     font-size: 14px;
-    background: #fff;
+    background: #f9f5f0;
+    color: #333;
 }
 
 .contact-form textarea {
@@ -311,16 +342,16 @@ a:hover {
 
 /* Footer */
 .site-footer {
-    background: #946f60;
-    color: #fff;
+    background: #7a5a4c;
+    color: #f9f5f0;
     text-align: center;
     padding: 15px 0;
     font-size: 13px;
-    border-top: 3px solid #7a5a4c;
+    border-top: 3px solid #5a3e32;
 }
 
 .site-footer a {
-    color: #f0ddd4;
+    color: #f9f5f0;
 }
 
 /* About Page */
@@ -330,32 +361,32 @@ a:hover {
 }
 
 .about-page h1 {
-    color: #946f60;
+    color: #f9f5f0;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #946f60;
+    border-bottom: 2px solid #f9f5f0;
     padding-bottom: 8px;
 }
 
 .dropdown-section {
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #7a5a4c;
 }
 
 .dropdown-header {
-    background: #f9f5f0;
+    background: #7a5a4c;
     padding: 12px 15px;
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
-    color: #946f60;
-    border-bottom: 1px solid #ccc;
+    color: #f9f5f0;
+    border-bottom: 1px solid #5a3e32;
     user-select: none;
 }
 
 .dropdown-header:hover {
-    background: #f0e8de;
+    background: #5a3e32;
 }
 
 .dropdown-header .arrow {
@@ -366,9 +397,10 @@ a:hover {
 .dropdown-content {
     display: none;
     padding: 15px 20px;
-    background: #fff;
+    background: #946f60;
     line-height: 1.8;
     font-size: 15px;
+    color: #f9f5f0;
 }
 
 .dropdown-content.open {
@@ -384,5 +416,60 @@ hr.divider {
     width: 960px;
     margin: 20px auto;
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #7a5a4c;
+}
+
+/* Kothali Spiritual Centre Section */
+.kothali-section {
+    width: 960px;
+    margin: 20px auto;
+    background: #7a5a4c;
+    border: 1px solid #5a3e32;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.kothali-section h2 {
+    color: #f9f5f0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f9f5f0;
+    padding-bottom: 8px;
+}
+
+.kothali-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #f9f5f0;
+}
+
+.kothali-images {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.kothali-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 2px solid #f9f5f0;
+}
+
+/* About page images */
+.about-images {
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.about-images img {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 2px solid #f9f5f0;
 }
