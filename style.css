@@ -43,7 +43,7 @@ a:hover {
 }
 
 .logo-area img {
-    height: 60px;
+    height: 90px;
     vertical-align: middle;
 }
 
@@ -342,16 +342,16 @@ a:hover {
 
 /* Footer */
 .site-footer {
-    background: #946f60;
-    color: #f9f5f0;
+    background: #f0e8de;
+    color: #946f60;
     text-align: center;
     padding: 15px 0;
     font-size: 13px;
-    border-top: 3px solid #7a5a4c;
+    border-top: 2px solid #946f60;
 }
 
 .site-footer a {
-    color: #f9f5f0;
+    color: #946f60;
 }
 
 /* About Page */
@@ -454,9 +454,14 @@ hr.divider {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    float: left;
-    margin: 0 10px 10px 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 9px 10px 0;
     border: 2px solid #946f60;
+}
+
+.kothali-images img:last-child {
+    margin-right: 0;
 }
 
 /* About page images */
