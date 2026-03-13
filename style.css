@@ -25,8 +25,8 @@ a:hover {
 
 /* Header */
 .site-header {
-    background-color: #946f60;
-    border-bottom: 2px solid #7a5a4c;
+    background-color: #f0e8de;
+    border-bottom: 2px solid #946f60;
     padding: 10px 0;
 }
 
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .logo-area img {
-    height: 90px;
+    height: 110px;
     vertical-align: middle;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 
 .nav-area ul li a {
     text-decoration: none;
-    color: #f9f5f0;
+    color: #946f60;
     font-size: 15px;
     font-weight: bold;
     padding: 5px 0;
@@ -75,8 +75,8 @@ a:hover {
 
 .nav-area ul li a:hover,
 .nav-area ul li a.active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: #7a5a4c;
+    border-bottom: 2px solid #946f60;
 }
 
 /* About Dropdown in Navbar */
@@ -90,8 +90,8 @@ a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #946f60;
-    border: 1px solid #7a5a4c;
+    background: #f0e8de;
+    border: 1px solid #946f60;
     min-width: 220px;
     z-index: 100;
     padding: 5px 0;
@@ -104,7 +104,7 @@ a:hover {
 .nav-dropdown-menu a {
     display: block;
     padding: 8px 15px;
-    color: #f9f5f0;
+    color: #946f60;
     text-decoration: none;
     font-size: 14px;
     font-weight: normal;
@@ -112,8 +112,8 @@ a:hover {
 }
 
 .nav-dropdown-menu a:hover {
-    background: #7a5a4c;
-    color: #fff;
+    background: #946f60;
+    color: #f9f5f0;
 }
 
 /* Hero Slider */
@@ -451,12 +451,12 @@ hr.divider {
 }
 
 .kothali-images img {
-    width: 300px;
+    width: 293px;
     height: 200px;
     object-fit: cover;
     display: inline-block;
     vertical-align: top;
-    margin: 0 9px 10px 0;
+    margin: 0 5px 10px 0;
     border: 2px solid #946f60;
 }
 
