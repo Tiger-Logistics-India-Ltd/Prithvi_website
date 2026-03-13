@@ -9,24 +9,24 @@
 body {
     font-family: Calibri, Arial, sans-serif;
     font-size: 15px;
-    color: #f9f5f0;
-    background-color: #946f60;
+    color: #333;
+    background-color: #f9f5f0;
     line-height: 1.6;
 }
 
 a {
-    color: #f9f5f0;
+    color: #946f60;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #fff;
+    color: #7a5a4c;
 }
 
 /* Header */
 .site-header {
-    background-color: #7a5a4c;
-    border-bottom: 2px solid #f9f5f0;
+    background-color: #946f60;
+    border-bottom: 2px solid #7a5a4c;
     padding: 10px 0;
 }
 
@@ -76,7 +76,7 @@ a:hover {
 .nav-area ul li a:hover,
 .nav-area ul li a.active {
     color: #fff;
-    border-bottom: 2px solid #f9f5f0;
+    border-bottom: 2px solid #fff;
 }
 
 /* About Dropdown in Navbar */
@@ -90,8 +90,8 @@ a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #7a5a4c;
-    border: 1px solid #f9f5f0;
+    background: #946f60;
+    border: 1px solid #7a5a4c;
     min-width: 220px;
     z-index: 100;
     padding: 5px 0;
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .nav-dropdown-menu a:hover {
-    background: #946f60;
+    background: #7a5a4c;
     color: #fff;
 }
 
@@ -121,7 +121,7 @@ a:hover {
     width: 960px;
     margin: 20px auto;
     position: relative;
-    border: 1px solid #7a5a4c;
+    border: 1px solid #946f60;
     background: #000;
     overflow: hidden;
     height: 400px;
@@ -187,9 +187,9 @@ a:hover {
     margin: 25px auto;
     text-align: center;
     padding: 25px 40px;
-    background: #7a5a4c;
-    border-top: 2px solid #f9f5f0;
-    border-bottom: 2px solid #f9f5f0;
+    background: #946f60;
+    border-top: 2px solid #7a5a4c;
+    border-bottom: 2px solid #7a5a4c;
 }
 
 .quote-section p {
@@ -205,9 +205,9 @@ a:hover {
     width: 960px;
     margin: 30px auto 15px auto;
     padding-bottom: 8px;
-    border-bottom: 2px solid #f9f5f0;
+    border-bottom: 2px solid #946f60;
     font-size: 22px;
-    color: #f9f5f0;
+    color: #946f60;
     font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -222,8 +222,8 @@ a:hover {
     width: 220px;
     float: left;
     margin: 10px 10px;
-    border: 1px solid #7a5a4c;
-    background: #7a5a4c;
+    border: 1px solid #ddd;
+    background: #fff;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -237,7 +237,7 @@ a:hover {
 
 .activity-item h3 {
     font-size: 14px;
-    color: #f9f5f0;
+    color: #946f60;
     margin: 8px 5px;
     font-family: Calibri, Arial, sans-serif;
 }
@@ -247,12 +247,12 @@ a:hover {
     width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background: #7a5a4c;
-    border: 1px solid #5a3e32;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
 .about-brief h2 {
-    color: #f9f5f0;
+    color: #946f60;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 20px;
     margin-bottom: 10px;
@@ -262,11 +262,11 @@ a:hover {
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 10px;
-    color: #f9f5f0;
+    color: #333;
 }
 
 .about-brief a {
-    color: #f9f5f0;
+    color: #946f60;
     font-weight: bold;
 }
 
@@ -289,7 +289,7 @@ a:hover {
 }
 
 .contact-info h3 {
-    color: #f9f5f0;
+    color: #946f60;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -305,7 +305,7 @@ a:hover {
     margin-bottom: 3px;
     font-weight: bold;
     font-size: 14px;
-    color: #f9f5f0;
+    color: #333;
 }
 
 .contact-form input[type="text"],
@@ -314,10 +314,10 @@ a:hover {
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;
-    border: 1px solid #7a5a4c;
+    border: 1px solid #ccc;
     font-family: Calibri, Arial, sans-serif;
     font-size: 14px;
-    background: #f9f5f0;
+    background: #fff;
     color: #333;
 }
 
@@ -328,7 +328,7 @@ a:hover {
 
 .contact-form button {
     background: #946f60;
-    color: #fff;
+    color: #f9f5f0;
     border: 1px solid #7a5a4c;
     padding: 8px 25px;
     font-size: 14px;
@@ -342,12 +342,12 @@ a:hover {
 
 /* Footer */
 .site-footer {
-    background: #7a5a4c;
+    background: #946f60;
     color: #f9f5f0;
     text-align: center;
     padding: 15px 0;
     font-size: 13px;
-    border-top: 3px solid #5a3e32;
+    border-top: 3px solid #7a5a4c;
 }
 
 .site-footer a {
@@ -361,32 +361,32 @@ a:hover {
 }
 
 .about-page h1 {
-    color: #f9f5f0;
+    color: #946f60;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #f9f5f0;
+    border-bottom: 2px solid #946f60;
     padding-bottom: 8px;
 }
 
 .dropdown-section {
     margin-bottom: 15px;
-    border: 1px solid #7a5a4c;
+    border: 1px solid #ddd;
 }
 
 .dropdown-header {
-    background: #7a5a4c;
+    background: #946f60;
     padding: 12px 15px;
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
     color: #f9f5f0;
-    border-bottom: 1px solid #5a3e32;
+    border-bottom: 1px solid #7a5a4c;
     user-select: none;
 }
 
 .dropdown-header:hover {
-    background: #5a3e32;
+    background: #7a5a4c;
 }
 
 .dropdown-header .arrow {
@@ -397,10 +397,10 @@ a:hover {
 .dropdown-content {
     display: none;
     padding: 15px 20px;
-    background: #946f60;
+    background: #fff;
     line-height: 1.8;
     font-size: 15px;
-    color: #f9f5f0;
+    color: #333;
 }
 
 .dropdown-content.open {
@@ -416,25 +416,25 @@ hr.divider {
     width: 960px;
     margin: 20px auto;
     border: none;
-    border-top: 1px solid #7a5a4c;
+    border-top: 1px solid #ddd;
 }
 
 /* Kothali Spiritual Centre Section */
 .kothali-section {
     width: 960px;
     margin: 20px auto;
-    background: #7a5a4c;
-    border: 1px solid #5a3e32;
+    background: #fff;
+    border: 1px solid #ddd;
     padding: 20px;
     overflow: hidden;
 }
 
 .kothali-section h2 {
-    color: #f9f5f0;
+    color: #946f60;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 22px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #f9f5f0;
+    border-bottom: 2px solid #946f60;
     padding-bottom: 8px;
 }
 
@@ -442,7 +442,7 @@ hr.divider {
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 10px;
-    color: #f9f5f0;
+    color: #333;
 }
 
 .kothali-images {
@@ -456,7 +456,7 @@ hr.divider {
     object-fit: cover;
     float: left;
     margin: 0 10px 10px 0;
-    border: 2px solid #f9f5f0;
+    border: 2px solid #946f60;
 }
 
 /* About page images */
@@ -471,5 +471,5 @@ hr.divider {
     object-fit: cover;
     float: left;
     margin: 0 10px 10px 0;
-    border: 2px solid #f9f5f0;
+    border: 2px solid #946f60;
 }
