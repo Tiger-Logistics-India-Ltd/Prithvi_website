@@ -45,8 +45,11 @@ a:hover {
 }
 
 .logo-area img {
-    height: 80px;
+    height: 70px;
+    width: auto;
+    max-width: 100%;
     vertical-align: middle;
+    display: block;
 }
 
 .nav-area {
@@ -550,7 +553,8 @@ hr.divider {
     }
 
     .logo-area img {
-        height: 60px;
+        height: 56px;
+        width: auto;
     }
 
     .nav-area {
