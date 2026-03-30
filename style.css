@@ -1,4 +1,5 @@
 /* Prithvi Foundation - Simple Old-School Website */
+/* Google Fonts loaded asynchronously in HTML <head> — do not @import here */
 
 * {
     margin: 0;
@@ -27,11 +28,12 @@ a:hover {
 .site-header {
     background-color: #f0e8de;
     border-bottom: 2px solid #946f60;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .header-inner {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     display: table;
 }
@@ -43,7 +45,7 @@ a:hover {
 }
 
 .logo-area img {
-    height: 110px;
+    height: 80px;
     vertical-align: middle;
 }
 
@@ -68,7 +70,8 @@ a:hover {
 .nav-area ul li a {
     text-decoration: none;
     color: #946f60;
-    font-size: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
     font-weight: bold;
     padding: 5px 0;
 }
@@ -89,12 +92,16 @@ a:hover {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background: #f0e8de;
-    border: 1px solid #946f60;
-    min-width: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f9f5f0;
+    border: 1px solid #c4a68a;
+    border-top: 3px solid #946f60;
+    min-width: 240px;
     z-index: 100;
-    padding: 5px 0;
+    padding: 10px 0;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .nav-dropdown:hover .nav-dropdown-menu {
@@ -103,11 +110,19 @@ a:hover {
 
 .nav-dropdown-menu a {
     display: block;
-    padding: 8px 15px;
-    color: #946f60;
+    padding: 9px 20px;
+    color: #7a5a4c;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 13.5px;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #ede6dc;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-dropdown-menu a:last-child {
     border-bottom: none;
 }
 
@@ -249,6 +264,16 @@ a:hover {
     padding: 20px;
     background: #fff;
     border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.about-brief img {
+    float: left;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #946f60;
+    margin: 0 20px 10px 0;
 }
 
 .about-brief h2 {
@@ -477,4 +502,276 @@ hr.divider {
     float: left;
     margin: 0 10px 10px 0;
     border: 2px solid #946f60;
+}
+
+/* Hamburger Button (hidden on desktop) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #946f60;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* ===== Mobile Responsive Styles ===== */
+@media screen and (max-width: 768px) {
+    .header-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        position: static;
+        transform: none;
+    }
+
+    .logo-area {
+        display: block;
+        width: auto;
+    }
+
+    .logo-area img {
+        height: 60px;
+    }
+
+    .nav-area {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        background: #f0e8de;
+        border-top: 1px solid #946f60;
+        padding: 10px 0;
+    }
+
+    .nav-area.nav-open {
+        display: block;
+    }
+
+    .nav-area ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .nav-area ul li a {
+        display: block;
+        padding: 10px 15px;
+        font-size: 17px;
+        border-bottom: none;
+    }
+
+    .nav-area ul li a:hover,
+    .nav-area ul li a.active {
+        background: #946f60;
+        color: #f9f5f0;
+        border-bottom: none;
+    }
+
+    .nav-dropdown-menu {
+        position: static;
+        border: none;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .nav-dropdown-menu a {
+        padding-left: 30px;
+    }
+
+    .hero-slider {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .hero-slider .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .quote-section,
+    .about-brief,
+    .kothali-section,
+    .activities-grid,
+    .contact-section,
+    .about-page,
+    .section-heading,
+    hr.divider {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .activity-item {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .activity-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .kothali-images img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Service Page Gallery */
+.service-gallery {
+    overflow: hidden;
+    margin: 20px 0 10px 0;
+}
+
+.service-gallery img {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 2px solid #946f60;
+}
+
+.back-link {
+    margin: 15px 0 0 0;
+}
+
+.back-link a {
+    color: #946f60;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.activity-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .activity-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .hero-slider .slide-text {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .quote-section p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-gallery img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    .gallery-masonry {
+        columns: 1 !important;
+        padding: 0 10px !important;
+    }
+}
+
+/* Gallery Masonry Grid */
+.gallery-masonry {
+    width: 960px;
+    margin: 0 auto 40px auto;
+    columns: 3;
+    column-gap: 15px;
+}
+
+.gallery-card {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(148,111,96,0.25);
+}
+
+.gallery-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.65));
+    padding: 30px 12px 12px 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay span {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }

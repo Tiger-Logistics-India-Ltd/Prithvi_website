@@ -1,10 +1,41 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Prithvi Foundation</title>
+    <meta name="description" content="Learn about Prithvi Foundation, an NGO based in Tehri Garhwal, Uttarakhand, dedicated to spiritual and community service.">
+    <meta name="keywords" content="Prithvi Foundation, NGO Uttarakhand, Tehri Garhwal, spiritual centre, community service, seva, yoga meditation, havan pooja">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://prithvifoundation.org/about.html">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prithvifoundation.org/about.html">
+    <meta property="og:title" content="About - Prithvi Foundation">
+    <meta property="og:description" content="Learn about Prithvi Foundation, an NGO based in Tehri Garhwal, Uttarakhand, dedicated to spiritual and community service.">
+    <meta property="og:image" content="https://prithvifoundation.org/logo/Prithivi%20logo.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="250">
+    <meta property="og:site_name" content="Prithvi Foundation">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About - Prithvi Foundation">
+    <meta name="twitter:description" content="Learn about Prithvi Foundation, an NGO based in Tehri Garhwal, Uttarakhand, dedicated to spiritual and community service.">
+    <meta name="twitter:image" content="https://prithvifoundation.org/logo/Prithivi%20logo.png">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="logo/fav_icon.svg">
+    <link rel="shortcut icon" href="logo/fav_icon.svg">
+
+    <!-- Async Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"></noscript>
+    <!-- LCP preload (index only) -->
 </head>
 <body>
 
@@ -13,20 +44,36 @@
     <div class="header-inner">
         <div class="logo-area">
             <a href="index.html">
-                <img src="logo/Prithivi%20logo.png" alt="Prithvi Foundation Logo">
+                <img src="logo/opt/Prithivi%20logo.webp" alt="Prithvi Foundation Logo" width="400" height="200">
             </a>
         </div>
+        <button class="hamburger" onclick="document.querySelector('.nav-area').classList.toggle('nav-open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
         <div class="nav-area">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li class="nav-dropdown">
                     <a href="about.html" class="active">About</a>
                     <div class="nav-dropdown-menu">
-                        <a href="about.html#about-foundation">About Prithvi Foundation</a>
-                        <a href="about.html#kothali-centre">Kothali Spiritual Centre</a>
+                        <a href="about.html">About Prithvi Foundation</a>
+                        <a href="kothali.html">Prithvi Spiritual Centre</a>
                     </div>
                 </li>
-                <li><a href="index.html#activities">Activities</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#activities">Activities</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="educational-material-distribution.html">Educational Material Distribution</a>
+                        <a href="spiritual-workshops.html">Spiritual Workshops</a>
+                        <a href="havan-pooja.html">Havan &amp; Pooja</a>
+                        <a href="brahman-bhoj.html">Brahman Bhoj</a>
+                        <a href="yoga-meditation.html">Yoga &amp; Meditation</a>
+                        <a href="sports-activity.html">Sports Activity</a>
+                        <a href="community-lunch.html">Community Lunch</a>
+                        <a href="tulsi-distribution.html">Herbal Plantation Drive</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="index.html#contact">Contact Us</a></li>
             </ul>
         </div>
@@ -46,9 +93,9 @@
         </div>
         <div class="dropdown-content open">
             <div class="about-images">
-                <img src="Images/Shaanti%20Puja/WhatsApp%20Image%202025-03-02%20at%204.41.07%20PM.jpeg" alt="Prithvi Foundation">
-                <img src="Images/Prayer_Havan%20Group/Final/Group%20Pic%20Havan.jpeg" alt="Prithvi Foundation Havan">
-                <img src="Images/School%20Stationary%20Distribution/WhatsApp%20Image%202026-03-12%20at%203.00.21%20PM.jpeg" alt="School Distribution">
+                <img src="Images/opt/Shaanti%20Puja/WhatsApp%20Image%202025-03-02%20at%204.41.07%20PM.webp" alt="Prithvi Foundation" width="900" height="1200">
+                <img loading="lazy" src="Images/opt/Prayer_Havan%20Group/Final/Group%20Pic%20Havan.webp" alt="Prithvi Foundation Havan" width="1200" height="731">
+                <img loading="lazy" src="Images/opt/School%20Stationary%20Distribution/WhatsApp%20Image%202026-03-12%20at%203.00.21%20PM.webp" alt="School Distribution" width="1200" height="675">
             </div>
 
             <p><em>&ldquo;Seva Paramo Dharma&#7717;&rdquo; &mdash; Service is the highest duty.</em></p>
@@ -62,35 +109,6 @@
             <p>Its work includes efforts aimed at improving livelihoods in surrounding communities, supporting pilgrims who travel through the region, and creating spaces for spiritual reflection, service, and collective welfare.</p>
 
             <p>Rooted in the timeless ethos of seva (selfless service), Prithvi Foundation continues to work towards nurturing a more compassionate, spiritually aware, and socially responsible society.</p>
-        </div>
-    </div>
-
-    <!-- Dropdown 2: Kothali Spiritual Centre -->
-    <div class="dropdown-section" id="kothali-centre">
-        <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span class="arrow">&#9660;</span>
-            Kothali Spiritual Centre
-        </div>
-        <div class="dropdown-content open">
-            <div class="about-images">
-                <img src="Images/Prayer_Mandir/final/WhatsApp%20Image%202025-03-02%20at%208.04.42%20PM.jpeg" alt="Kothali Centre">
-                <img src="Images/Prayer_Mandir/final/WhatsApp%20Image%202025-03-02%20at%208.04.40%20PM.jpeg" alt="Kothali Centre">
-                <img src="Images/Yoga%20in%20Open%20Meditation%20Area/final/WhatsApp%20Image%202025-03-02%20at%208.09.22%20PM.jpeg" alt="Yoga at Kothali">
-            </div>
-
-            <p>Nestled in the serene surroundings of Kothali Village, the Prithvi Foundation's spiritual centre serves as a place of devotion, community service, and collective well-being. Rooted in the spirit of seva and spiritual harmony, the centre brings together people from nearby villages and visiting devotees through a range of spiritual, cultural, and community-focused activities.</p>
-
-            <p>At the heart of the centre's work is the belief that spiritual spaces should also nurture the physical, social, and emotional well-being of the communities around them. Regular yoga and meditation workshops are organized to encourage mindfulness, inner balance, and holistic health among participants of all ages.</p>
-
-            <p>The centre also promotes community bonding through sports activities for local youth, creating opportunities for recreation, teamwork, and healthy engagement. In keeping with the tradition of shared meals in many spiritual traditions, community lunches are regularly organized, bringing villagers, volunteers, and visitors together in a spirit of equality and togetherness.</p>
-
-            <p>Spiritual practices remain central to the life of the centre. Havan and pooja ceremonies are conducted regularly, creating an atmosphere of devotion and prayer. In addition, Granthi Sahib Path and Ardas are organized, reflecting the centre's inclusive spiritual ethos and respect for diverse traditions of faith and worship.</p>
-
-            <p>Aligned with its commitment to environmental consciousness, the centre also conducts herbal plant distribution drives, encouraging households to cultivate medicinal and traditional plants that support both health and ecological awareness.</p>
-
-            <p>Beyond these activities, the Kothali Spiritual Centre acts as a bridge for Prithvi Foundation's wider charitable initiatives in the region. From supporting the upliftment of local schools to organizing distribution drives for essential supplies, the centre serves as a hub through which the Foundation extends its service to surrounding communities.</p>
-
-            <p>Through these efforts, the Kothali centre continues to stand as a space where spirituality, service, and community development come together, fostering a culture of compassion, learning, and collective upliftment.</p>
         </div>
     </div>
 
