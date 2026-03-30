@@ -714,17 +714,27 @@ hr.divider {
     }
 
     .gallery-masonry {
-        columns: 1 !important;
+        columns: 2 !important;
         padding: 0 10px !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-masonry {
+        columns: 1 !important;
     }
 }
 
 /* Gallery Masonry Grid */
 .gallery-masonry {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto 40px auto;
     columns: 3;
     column-gap: 15px;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .gallery-card {
