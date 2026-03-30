@@ -9,6 +9,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://prithvifoundation.org/">
 
+
     <!-- Open Graph / Social Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://prithvifoundation.org/">
@@ -19,11 +20,13 @@
     <meta property="og:image:height" content="250">
     <meta property="og:site_name" content="Prithvi Foundation">
 
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Prithvi Foundation - Tehri Garhwal, Uttarakhand">
     <meta name="twitter:description" content="Prithvi Foundation is an NGO serving society through spiritual, humanitarian, and community-focused initiatives in Tehri Garhwal, Uttarakhand.">
     <meta name="twitter:image" content="https://prithvifoundation.org/logo/Prithivi%20logo.png">
+
 
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
@@ -41,6 +44,7 @@
 </head>
 <body>
 
+
 <!-- Header -->
 <div class="site-header">
     <div class="header-inner">
@@ -49,17 +53,33 @@
                 <img src="logo/Prithivi%20logo.png" alt="Prithvi Foundation Logo" width="500" height="250">
             </a>
         </div>
+        <button class="hamburger" onclick="document.querySelector('.nav-area').classList.toggle('nav-open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
         <div class="nav-area">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="nav-dropdown">
                     <a href="about.html">About</a>
                     <div class="nav-dropdown-menu">
-                        <a href="about.html#about-foundation">About Prithvi Foundation</a>
+                        <a href="about.html">About Prithvi Foundation</a>
                         <a href="spiritual-centre.html">Prithvi Spiritual Centre</a>
                     </div>
                 </li>
-                <li><a href="#activities">Activities</a></li>
+                <li class="nav-dropdown">
+                    <a href="#activities">Activities</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="educational-material-distribution.html">Educational Material Distribution</a>
+                        <a href="spiritual-workshops.html">Spiritual Workshops</a>
+                        <a href="havan-pooja.html">Havan &amp; Pooja</a>
+                        <a href="brahman-bhoj.html">Brahman Bhoj</a>
+                        <a href="yoga-meditation.html">Yoga &amp; Meditation</a>
+                        <a href="sports-activity.html">Sports Activity</a>
+                        <a href="community-lunch.html">Community Lunch</a>
+                        <a href="tulsi-distribution.html">Herbal Plantation Drive</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
